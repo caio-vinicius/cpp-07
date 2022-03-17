@@ -18,12 +18,16 @@ Array<T>::Array(): length(0) {
 
 template <typename T>
 Array<T>::~Array() {
-    //delete [] Array::data;
+    delete[] Array::data;
 }
 
 template <typename T>
 Array<T> &Array<T>::operator=(Array const &rhs) {
-    (void)rhs;
+    if (this == &rhs)
+        return (*this);
+    Array::data = new T[rhs.length];
+    std::copy(rhs.data, rhs.data + rhs.length, Array::data);
+    Array::length = rhs.length;
     return (*this);
 }
 
