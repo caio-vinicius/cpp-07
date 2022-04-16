@@ -1,4 +1,4 @@
-/* Copyright (c) 2022 Caio Souza, Gustavo Ariadno. All rights reserved. */
+/* Copyright (c) 2022 Caio Souza. All rights reserved. */
 /* 42 */
 
 #ifndef ITER_HPP

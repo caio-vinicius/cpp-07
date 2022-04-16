@@ -1,5 +1,7 @@
-/* Copyright (c) 2022 Caio Souza, Gustavo Ariadno. All rights reserved. */
+/* Copyright (c) 2022 Caio Souza. All rights reserved. */
 /* 42 */
+
+#include <iostream>
 
 #include "iter.hpp"
 
@@ -12,6 +14,7 @@ template <typename T>
 void iter(T *a, const unsigned int length, void (*f)(T &)) {
     for (unsigned int i = 0; i < length; i++) {
         f(a[i]);
+        std::cout << "-: " << a[i] << std::endl;
     }
 }
 
