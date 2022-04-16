@@ -1,4 +1,4 @@
-/* Copyright (c) 2022 Caio Souza, Gustavo Ariadno. All rights reserved. */
+/* Copyright (c) 2022 Caio Souza. All rights reserved. */
 /* 42 */
 
 #include <exception>
@@ -63,7 +63,7 @@ T &Array<T>::operator[](const int i) {
 }
 
 template <typename T>
-unsigned int Array<T>::size() const {
+unsigned int Array<T>::size(void) const {
     return (Array::length);
 }
 

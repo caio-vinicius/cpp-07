@@ -1,4 +1,4 @@
-/* Copyright (c) 2022 Caio Souza, Gustavo Ariadno. All rights reserved. */
+/* Copyright (c) 2022 Caio Souza. All rights reserved. */
 /* 42 */
 
 #ifndef ARRAY_HPP
@@ -18,7 +18,7 @@ class Array {
     Array(int n);
     T operator[](const int i) const;
     T &operator[](const int i);
-    unsigned int size() const;
+    unsigned int size(void) const;
 
     struct IndexOutOfRange : public std::exception {
         const char *error() const;
