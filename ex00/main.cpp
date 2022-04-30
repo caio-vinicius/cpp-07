@@ -8,10 +8,10 @@
 template <typename T>
 void swap(T& x,T& y)
 {
-     T temp;
-     temp=x;
-     x=y;
-     y=temp;
+     T tmp;
+     tmp = x;
+     x = y;
+     y = tmp;
 }
 
 template <typename T>
