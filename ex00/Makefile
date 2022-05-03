@@ -15,11 +15,11 @@ CCFLAGS = -Wfatal-errors -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 all: $(NAME)
 
 $(NAME): $(OBJECTS_FILES)
-	g++ $^ -o $@
+	c++ $^ -o $@
 
 -include $(DEPENDENCIES_FILES)
 $(OBJECTS)/%.o: $(SOURCES)/%.cpp
-	g++ $(CCFLAGS) -MMD -c $< -o $@
+	c++ $(CCFLAGS) -MMD -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS_FILES) $(DEPENDENCIES_FILES)
